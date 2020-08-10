@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:src="@mipmap/moneynote_logo" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="397dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:text="여행 날짜"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="#F0270909" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="출발 날짜" />
+
+                    <DatePicker
+                        android:id="@+id/dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="158dp"
+                        android:calendarViewShown="false"
+                        android:datePickerMode="spinner"
+                        android:minDate="0" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="도착 날짜" />
+
+                    <DatePicker
+                        android:id="@+id/dp2"
+                        android:layout_width="match_parent"
+                        android:layout_height="158dp"
+                        android:calendarViewShown="false"
+                        android:datePickerMode="spinner"
+                        android:minDate="0" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:text="금액 설정"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="#F0270909" />
+
+                    <EditText
+                        android:id="@+id/editTextNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:ems="10"
+                        android:hint="금액을 입력하세요."
+                        android:inputType="number" />
+
+                    <Button
+                        android:id="@+id/ok"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="입력완료" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+</FrameLayout>

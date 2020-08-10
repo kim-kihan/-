@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/day"
+        app:showAsAction="always"
+        android:alphabeticShortcut="a"
+        android:icon="@android:drawable/ic_menu_day"
+        android:title="일별" />
+    <item
+        android:id="@+id/week"
+        app:showAsAction="always"
+        android:icon="@android:drawable/ic_menu_week"
+        android:title="주별" />
+    <item
+        android:id="@+id/month"
+        app:showAsAction="always"
+        android:icon="@android:drawable/ic_menu_month"
+        android:title="월별" />
+    <item
+        android:id="@+id/statistics"
+        app:showAsAction="always"
+        android:icon="@android:drawable/ic_menu_help"
+        android:title="통계" />
+    <item
+        android:id="@+id/trip"
+        app:showAsAction="always"
+        android:icon="@android:drawable/ic_menu_mapmode"
+        android:title="여행" />
+
+
+</menu>
