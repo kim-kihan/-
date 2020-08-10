@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/fragment"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment">
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/weekly_menu"
@@ -20,5 +21,6 @@
 
         app:layout_constraintRight_toLeftOf="parent"
         app:menu="@menu/main_menu" />
+
 
 </FrameLayout>

@@ -16,7 +16,9 @@ import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.RelativeLayout;
 
+import com.example.moneynote.Calendar.CalendarFragment;
 import com.example.moneynote.Day.DayFragment;
+import com.example.moneynote.Graph.GraphFragment;
 import com.example.moneynote.Join.JoinFragment;
 import com.example.moneynote.Login.LoginFragment;
 import com.example.moneynote.trip.TripFragment;
@@ -87,12 +89,22 @@ public class MainActivity extends AppCompatActivity {
                     fragmentTransaction.commit();
                     return true;
                 }
-                /*case R.id.month: {
+                case R.id.month: {
+                    fragmentManager = getSupportFragmentManager();
+                    fragmentTransaction = fragmentManager.beginTransaction();
+                    fragmentTransaction.replace(R.id.fragment, new CalendarFragment());
+                    fragmentTransaction.addToBackStack(null);
+                    fragmentTransaction.commit();
                     return true;
                 }
                 case R.id.statistics: {
+                    fragmentManager = getSupportFragmentManager();
+                    fragmentTransaction = fragmentManager.beginTransaction();
+                    fragmentTransaction.replace(R.id.fragment, new GraphFragment());
+                    fragmentTransaction.addToBackStack(null);
+                    fragmentTransaction.commit();
                     return true;
-                }*/
+                }
                 case R.id.trip: {
                     fragmentManager = getSupportFragmentManager();
                     fragmentTransaction = fragmentManager.beginTransaction();
